@@ -1,0 +1,67 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container styles */
+.container {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+/* Form container styles */
+.form-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Sign-up section styles */
+.sign-up-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button, input {
+    margin: 10px 0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+}
+
+button {
+    background: #6a11cb;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2575fc;
+}
+
+input {
+    background: #f1f1f1;
+    width: 100%;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+.hidden {
+    display: none;
+}

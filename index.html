@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container">
+            <form id="login-form">
+                <h1>Sign In</h1>
+                <input type="email" placeholder="Email" id="login-email" required />
+                <input type="password" placeholder="Password" id="login-password" required />
+                <button type="submit">Sign In</button>
+                <p class="error-message" id="login-error"></p>
+            </form>
+            <div class="sign-up-section">
+                <h6>Don't have an account?</h6>
+                <button id="showSignUp">Sign Up</button>
+            </div>
+            <form id="signup-form" class="hidden">
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Name" id="signup-name" required />
+                <input type="email" placeholder="Email" id="signup-email" required />
+                <input type="password" placeholder="Password" id="signup-password" required />
+                <button type="submit">Sign Up</button>
+                <p class="error-message" id="signup-error"></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
