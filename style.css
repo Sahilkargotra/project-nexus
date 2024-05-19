@@ -4,8 +4,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    background-image: url('https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg'); /* Add your image URL here */
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
 }
-
 /* Container styles */
 .container {
     background: linear-gradient(45deg, #6a11cb, #2575fc);
@@ -17,14 +19,36 @@
     min-height: 480px;
     padding: 40px;
     overflow: hidden;
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    height: 100%;
+    
+}
+.cover{
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    height: 100%;
+    padding-top: 10%;
+   
 }
 
 /* Form container styles */
 .form-container {
-    background: #fff;
+    background-color: white;
     border-radius: 10px;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 /* Sign-up section styles */
