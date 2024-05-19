@@ -39,12 +39,31 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     alert('Login successful!');
 });
 document.getElementById('showSignUp').addEventListener('click', () => {
-    document.getElementById('login-form').classList.add('hidden');
-    document.getElementById('signup-form').classList.remove('hidden');
+    const loginForm = document.getElementById('login-form');
+    const signupForm = document.getElementById('signup-form');
+
+    loginForm.classList.remove('show');
+    loginForm.classList.add('fade');
+    setTimeout(() => {
+        loginForm.classList.add('hidden');
+        signupForm.classList.remove('hidden');
+        signupForm.classList.remove('fade');
+        signupForm.classList.add('show');
+    }, 500);
+
 });
 
 document.getElementById('showSignIn').addEventListener('click', () => {
-    document.getElementById('signup-form').classList.add('hidden');
-    document.getElementById('login-form').classList.remove('hidden');
+    const loginForm = document.getElementById('login-form');
+    const signupForm = document.getElementById('signup-form');
+
+    signupForm.classList.remove('show');
+    signupForm.classList.add('fade');
+    setTimeout(() => {
+        signupForm.classList.add('hidden');
+        loginForm.classList.remove('hidden');
+        loginForm.classList.remove('fade');
+        loginForm.classList.add('show');
+    }, 500);
 });
 
